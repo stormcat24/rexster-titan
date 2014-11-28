@@ -14,7 +14,7 @@ RUN mkdir -p rexster-server/ext/titan
 ADD http://s3.thinkaurelius.com/downloads/titan/titan-0.5.2-hadoop2.zip /
 RUN unzip titan-0.5.2-hadoop2.zip
 RUN cp -R titan-0.5.2-hadoop2/lib/* rexster-server/ext/titan/
-RUN rm titan-0.5.2-hadoop2*
+RUN rm -rf titan-0.5.2-hadoop2*
 
 EXPOSE 8182 8183 8184
 WORKDIR rexster-server
