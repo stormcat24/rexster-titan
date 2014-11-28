@@ -9,7 +9,7 @@ ADD http://tinkerpop.com/downloads/rexster/rexster-server-2.6.0.zip /
 RUN unzip rexster-server-2.6.0.zip
 RUN rm rexster-server-2.6.0.zip
 RUN mv rexster-server-2.6.0 rexster-server
-RUN mkdir -p rexster-server/etc/titan
+RUN mkdir -p rexster-server/ext/titan
 
 ADD http://s3.thinkaurelius.com/downloads/titan/titan-0.5.2-hadoop2.zip /
 RUN unzip titan-0.5.2-hadoop2.zip
